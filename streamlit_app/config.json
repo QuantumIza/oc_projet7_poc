@@ -1,0 +1,5 @@
+{
+  "model_path": "model/convnext_tiny_bestval_loss.keras",
+  "encoder_path": "outputs/encoder_classes_transfer_learning.joblib",
+  "image_size": [224, 224]
+}
