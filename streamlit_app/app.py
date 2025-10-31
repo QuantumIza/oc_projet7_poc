@@ -19,9 +19,15 @@ ENCODER_DRIVE_ID = "1qPlTqV7RIV1AlphyMu2QJQSzbw8qtiJ1"
 
 # --- TELECHARGEMENT DEPUIS DRIVE SI FICHIERS ABSENTS
 def download_from_drive(file_path, file_id):
-    if not os.path.exists(file_path):
-        url = f"https://drive.google.com/uc?id={file_id}"
-        gdown.download(url, file_path, quiet=False)
+    # Crée le dossier cible s'il n'existe pas
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+    # Construit l'URL de téléchargement
+    url = f"https://drive.google.com/uc?id={file_id}"
+
+    # Télécharge le fichier depuis Google Drive
+    gdown.download(url, file_path, quiet=False)
+
 
 download_from_drive(MODEL_PATH, MODEL_DRIVE_ID)
 download_from_drive(ENCODER_PATH, ENCODER_DRIVE_ID)
