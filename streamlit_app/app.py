@@ -12,9 +12,9 @@ from tensorflow.keras.applications.convnext import preprocess_input as preproces
 MODEL_PATH = "model/convnext_tiny_bestval_loss.keras"
 ENCODER_PATH = "outputs/encoder_classes_transfer_learning.joblib"
 
-# https://drive.google.com/file/d/1wgStOawKhJvhH3Lsngsf50BtjXUBJO52/view?usp=drive_link
+# https://drive.google.com/file/d/1wgStOawKhJvhH3Lsngsf50BtjXUBJO52/view?usp=sharing
 MODEL_DRIVE_ID = "1wgStOawKhJvhH3Lsngsf50BtjXUBJO52"
-# https://drive.google.com/file/d/1qPlTqV7RIV1AlphyMu2QJQSzbw8qtiJ1/view?usp=drive_link
+# https://drive.google.com/file/d/1qPlTqV7RIV1AlphyMu2QJQSzbw8qtiJ1/view?usp=sharing
 ENCODER_DRIVE_ID = "1qPlTqV7RIV1AlphyMu2QJQSzbw8qtiJ1"
 
 # --- TELECHARGEMENT DEPUIS DRIVE SI FICHIERS ABSENTS
